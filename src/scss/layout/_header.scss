@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  position: relative;
+  background: url("../images/cover.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $light-color;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background: $primary-color;
+  }
+
+  &__title {
+    font-family: $headings-font;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__phrase {
+    font-size: 16px;
+    margin-bottom: 45px;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: $light-color;
+    border-radius: 100%;
+    margin-bottom: 45px;
+  }
+}
