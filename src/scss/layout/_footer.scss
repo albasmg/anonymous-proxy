@@ -20,6 +20,10 @@
     width: 45px;
     background-color: $light-color;
     border-radius: 22.5px;
+
+    &:hover > img {
+      animation: loop 0.5s;
+    }
   }
 
   &__content {
@@ -76,5 +80,20 @@
       order: -1;
       margin-top: 0px;
     }
+  }
+}
+
+@keyframes loop {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(380deg);
   }
 }
