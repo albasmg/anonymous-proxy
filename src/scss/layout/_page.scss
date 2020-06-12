@@ -1,8 +1,9 @@
 .main {
-  &__topSection {
+  &__infoSection {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px 10px 45px;
     height: 376px;
   }
 
@@ -11,15 +12,62 @@
     color: $emphasis-font-color;
   }
 
-  &__sectionHeading {
+  &__infoSectionHeading {
     font-size: 24px;
     font-family: $headings-font;
     text-transform: capitalize;
+
+    @include tablet {
+      font-size: 26px;
+    }
   }
 
-  &__description {
+  &__infoDescription {
     font-size: 18px;
     color: $dark-color;
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__reasonsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 25% 25% 25% 15%;
+    height: 624px;
+    background-color: $medium-color;
+    padding: 30px 15px 60px;
+  }
+
+  &__reasonsSectionHeading {
+    font-family: $headings-font;
+    font-size: 24px;
+    align-self: start;
+    justify-self: center;
+  }
+
+  &__reasons {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__reasonsHeading {
+    font-family: $headings-font;
+    font-size: 18px;
+  }
+
+  &__reasonsDescription {
+    width: 180px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  &__reasonsButton {
+    align-self: center;
+    justify-self: center;
   }
 }
 
@@ -44,5 +92,9 @@
     width: 76px;
     border: 2px solid $secondary-color;
     color: $secondary-color;
+
+    @include tablet {
+      width: 91px;
+    }
   }
 }
