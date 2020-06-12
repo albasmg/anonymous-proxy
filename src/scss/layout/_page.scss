@@ -1,0 +1,48 @@
+.main {
+  &__topSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 376px;
+  }
+
+  &__lightHeading {
+    font-size: 14px;
+    color: $emphasis-font-color;
+  }
+
+  &__sectionHeading {
+    font-size: 24px;
+    font-family: $headings-font;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: $dark-color;
+  }
+}
+
+.btn {
+  height: 45px;
+  border: none;
+  background-color: inherit;
+  border-radius: 22.5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  outline: inherit;
+  cursor: pointer;
+
+  &__primary {
+    width: 184px;
+    background-color: $secondary-color;
+    color: $light-color;
+  }
+
+  &__secondary {
+    width: 76px;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
