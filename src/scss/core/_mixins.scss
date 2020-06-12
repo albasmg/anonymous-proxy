@@ -9,3 +9,14 @@
     @content;
   }
 }
+
+@mixin unstyled-nav {
+  list-style-type: none;
+  padding: 8px;
+}
+
+@mixin unstyled-uppercase-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}

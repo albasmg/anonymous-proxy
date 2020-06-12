@@ -1,0 +1,80 @@
+.footer {
+  position: relative;
+  height: 465px;
+  background: $tertiary-color;
+  color: $light-color;
+  padding-bottom: 45px;
+
+  @include tablet {
+    height: 240px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45px;
+    width: 45px;
+    background-color: $light-color;
+    border-radius: 22.5px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+
+    @include tablet {
+      flex-direction: row;
+      text-align: justify;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
+
+  &__mainNav {
+    li {
+      @include unstyled-nav;
+    }
+
+    a {
+      @include unstyled-uppercase-links;
+    }
+  }
+
+  &__socialMedia {
+    margin-top: 30px;
+
+    li {
+      @include unstyled-nav;
+    }
+
+    a {
+      @include unstyled-uppercase-links;
+    }
+
+    @include tablet {
+      margin-top: 0px;
+    }
+  }
+
+  &__copy {
+    margin-top: 30px;
+
+    span {
+      font-size: 14px;
+      display: block;
+    }
+
+    @include tablet {
+      order: -1;
+      margin-top: 0px;
+    }
+  }
+}
