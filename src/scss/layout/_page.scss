@@ -55,6 +55,7 @@
 
     @include desktop {
       height: 427px;
+      padding: 60px 80px;
     }
   }
 
@@ -66,6 +67,11 @@
 
     @include tablet {
       grid-column: span 3;
+      font-size: 26px;
+    }
+
+    @include desktop {
+      font-size: 32px;
     }
   }
 
@@ -73,17 +79,35 @@
     text-align: center;
     align-self: center;
     justify-self: center;
+
+    @include tablet {
+      align-self: start;
+    }
   }
 
   &__reasonsHeading {
     font-family: $headings-font;
     font-size: 18px;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 
   &__reasonsDescription {
     width: 180px;
     font-size: 18px;
     line-height: 1.67;
+
+    @include tablet {
+      font-size: 20px;
+      margin-top: 15px;
+      width: 212px;
+    }
+
+    @include desktop {
+      width: 350px;
+    }
   }
 
   &__reasonsSectionButton {
