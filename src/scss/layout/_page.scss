@@ -36,17 +36,25 @@
   }
 
   &__reasonsSection {
+    background-color: $medium-color;
+  }
+
+  &__reasonsSection .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% repeat(3, 25%) 15%;
     height: 624px;
-    background-color: $medium-color;
     padding: 30px 15px 60px;
 
     @include tablet {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       height: 397px;
+      padding: 30px 15px 60px;
+    }
+
+    @include desktop {
+      height: 427px;
     }
   }
 
