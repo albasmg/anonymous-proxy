@@ -11,92 +11,119 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__menu">
-        <img src="./assets/images/ico-menu.svg" alt="menu" />
-      </nav>
+    <header id="header" class="header">
+      <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+        <nav class="header__menu">
+          <img src="./assets/images/ico-menu.svg" alt="menu" />
+        </nav>
+      </a>
       <h1 class="header__title">
         <span>anonymous</span>
         <span>proxy</span>
       </h1>
       <p class="header__phrase">In hac habitasse platea dictumst.</p>
-      <div class="header__arrow">
-        <img src="./assets/images/ico-scroll-down.svg" alt="scroll down" />
-      </div>
+      <a href="./#reasonsSection" title="go to reasons to purchase">
+        <div class="header__arrow">
+          <img src="./assets/images/ico-scroll-down.svg" alt="scroll down" />
+        </div>
+      </a>
     </header>
 
     <main class="main">
-      <section class="main__infoSection">
-        <h4 class="main__lightHeading">Insomnia tips</h4>
-        <h2 class="main__infoSectionHeading">looking through a window</h2>
+      <section class="main__infoSection wrapper-tablet">
+        <div>
+          <h4 class="main__lightHeading">Insomnia tips</h4>
+          <h2 class="main__infoSectionHeading">looking through a window</h2>
+        </div>
         <p class="main__infoDescription">
           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
           luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
         <button class="main__infoButton btn btn__secondary">go</button>
       </section>
-      <section class="main__reasonsSection">
-        <h2 class="main__reasonsSectionHeading">3 reasons to purchase</h2>
-        <article class="main__reasons">
-          <h3 class="main__reasonsHeading">Ut sed metus</h3>
-          <p class="main__reasonsDescription">Lorem ipsum dolor sit amet, consecteur.</p>
-        </article>
+      <section id="reasonsSection" class="main__reasonsSection">
+        <div class="wrapper">
+          <h2 class="main__reasonsSectionHeading">3 reasons to purchase</h2>
+          <article class="main__reasons">
+            <h3 class="main__reasonsHeading">Ut sed metus</h3>
+            <p class="main__reasonsDescription">Lorem ipsum dolor sit amet, consecteur.</p>
+          </article>
 
-        <article class="main__reasons">
-          <h3 class="main__reasonsHeading">Curabitur ac erat</h3>
-          <p class="main__reasonsDescription">Mauris mattis urna quis lorem molestie.</p>
-        </article>
+          <article class="main__reasons">
+            <h3 class="main__reasonsHeading">Curabitur ac erat</h3>
+            <p class="main__reasonsDescription">Mauris mattis urna quis lorem molestie.</p>
+          </article>
 
-        <article class="main__reasons">
-          <h3 class="main__reasonsHeading">Morbi dictum</h3>
-          <p class="main__reasonsDescription">Aliquam in dolor et dolor tincidunt.</p>
-        </article>
+          <article class="main__reasons">
+            <h3 class="main__reasonsHeading">Morbi dictum</h3>
+            <p class="main__reasonsDescription">Aliquam in dolor et dolor tincidunt.</p>
+          </article>
 
-        <button class="main__reasonsSectionButton btn btn__primary">
-          more reasons
-        </button>
+          <button class="main__reasonsSectionButton btn btn__primary">
+            more reasons
+          </button>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__icon">
-        <img src="./assets/images/ico-arrow.svg" />
-      </div>
-      <div class="footer__content">
+      <a href="./#header" title="go to top">
+        <div class="footer__icon">
+          <img src="./assets/images/ico-arrow.svg" />
+        </div>
+      </a>
+      <div class="footer__content wrapper-tablet">
         <nav>
           <ul class="footer__mainNav">
             <li>
-              <a href="">articles</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                articles</a
+              >
             </li>
             <li>
-              <a href="">books</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                books</a
+              >
             </li>
             <li>
-              <a href="">events</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                events</a
+              >
             </li>
             <li>
-              <a href="">reasons</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                reasons</a
+              >
             </li>
             <li>
-              <a href="">tips</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                tips</a
+              >
             </li>
           </ul>
         </nav>
         <nav>
           <ul class="footer__socialMedia">
             <li>
-              <a href="">twitter</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                twitter</a
+              >
             </li>
             <li>
-              <a href="">instagram</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                instagram</a
+              >
             </li>
             <li>
-              <a href="">mastodon.social</a>
+              <a href="https://adalab.es/" target="_blank" title="Go to Adalab">
+                mastodon.social</a
+              >
             </li>
           </ul>
         </nav>
         <div class="footer__copy">
-          <span>&copy 2017</span> <span>we <img /> components</span>
+          <p>&copy 2017</p>
+          <p><span class="footer__copyIcon">we</span><span>components</span></p>
         </div>
       </div>
     </footer>
