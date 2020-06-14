@@ -10,9 +10,7 @@
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centered;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -70,6 +68,7 @@
 
   &__copy {
     margin-top: 30px;
+    line-height: 2.14;
     font-size: 14px;
     display: block;
 

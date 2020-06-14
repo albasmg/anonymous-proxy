@@ -1,0 +1,35 @@
+.btn {
+  height: 45px;
+  border: none;
+  background-color: inherit;
+  border-radius: 22.5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  outline: inherit;
+  cursor: pointer;
+
+  &__primary {
+    background-color: $secondary-color;
+    color: $light-color;
+    transition: 0.4s ease;
+
+    &:hover {
+      background-color: #ff6400;
+      transform: translate(0, -2px);
+      box-shadow: 3px 3px 15px -2px #c5c5c5;
+    }
+  }
+
+  &__secondary {
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    transition: 0.4s ease;
+
+    &:hover {
+      border: 3px solid $secondary-color;
+      transform: translate(0, -2px);
+      box-shadow: 3px 3px 15px -2px #c5c5c5;
+    }
+  }
+}

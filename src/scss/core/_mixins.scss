@@ -20,3 +20,9 @@
   text-transform: uppercase;
   color: inherit;
 }
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
