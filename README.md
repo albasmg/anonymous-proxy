@@ -35,17 +35,17 @@ src
  |     └─ reasons-to-purchase.html
  |
  ├─ scss
+ |  ├─ main.scss
  |  ├─ components
  |  |    └─ _button.scss
  |  ├─ core
  |  |   ├─ _variables.scss
  |  |   ├─ _reset.scss
  |  |   └─ _mixins.scss
- |  ├─ layout
- |  |   ├─ _header.scss
- |  |   ├─ _footer.scss
- |  |   └─ _page.scss
- |  └─ pages
+ |  └─ layout
+ |    ├─ _header.scss
+ |    ├─ _footer.scss
+ |    └─ _page.scss
  |
  └─ images
 
