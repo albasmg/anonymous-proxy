@@ -34,9 +34,9 @@
 
     @include tablet {
       flex-direction: row;
-      text-align: justify;
       justify-content: space-around;
       align-items: flex-start;
+      text-align: justify;
     }
   }
 
