@@ -47,6 +47,7 @@
 
     a {
       @include unstyled-uppercase-links;
+      padding: 5px;
     }
   }
 
