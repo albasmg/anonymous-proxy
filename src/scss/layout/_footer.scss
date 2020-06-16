@@ -10,17 +10,21 @@
   }
 
   &__icon {
-    @include flex-centered;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 45px;
-    width: 45px;
-    background-color: $light-color;
-    border-radius: 22.5px;
+    display: none;
 
     &:hover > img {
       animation: loop 0.5s;
+    }
+
+    @include tablet {
+      @include flex-centered;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 45px;
+      width: 45px;
+      background-color: $light-color;
+      border-radius: 22.5px;
     }
   }
 
